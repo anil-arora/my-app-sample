@@ -1,19 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { ProductComponent } from './product/product.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TestComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: ProductComponent },
+    ])
+    ],
+  declarations: [
+    AppComponent,
+    TestComponent,
+    ProductComponent,
+    ProductAlertsComponent,
+    TopBarComponent,
+    ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

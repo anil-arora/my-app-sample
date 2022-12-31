@@ -1,0 +1,27 @@
+ .top-bar{
+    border: none;
+    padding: 10px 10px;
+    font-size: 30px;
+    color:white;
+    background-color: #008CBA;
+    justify-content: space-between;
+    }
+.top-bar i.mystore{
+    font-size: 25px;
+    color:white;
+    margin-left: auto;
+   }
+.btn { 
+    float: right; 
+    border: none;
+    padding: 5px 5px;
+    font-size: 20px;
+    color: #1976d2;
+    background-color:white;
+    background-size:100px 80px;
+        
+        
+        }
+
+   
+    
